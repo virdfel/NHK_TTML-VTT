@@ -1,0 +1,44 @@
+<!--*
+* NHK TTML to VTT subtitles converter
+*
+* v0.1
+*-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>TTML - VTT</title>
+    <meta charset="UTF-8">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.js"></script>	
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<style>
+body{
+	background: #727e84;
+	padding-top:50px;
+}
+textarea{
+	min-width: 840px;
+	min-height: 300px;
+	margin-top:10px;
+	padding:10px;
+	background: #b6bbbd;
+	font-size:18px;
+	border: 0px;
+	outline:none;
+	-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;	
+}
+</style>
+	<table align="center">		
+		<tr><td>
+			<textarea id="tin"></textarea>
+		</td></tr>
+		<tr><td>
+			<textarea id="tout"></textarea>
+		</td></tr>
+	</table>
+</body>
+</html>
