@@ -1,9 +1,4 @@
-﻿/*
-* NHK TTML to VTT subtitles converter
-*
-* v0.1
-*/
-
+﻿
 function msToTime(s){
 	s *= 1000;
 	var ms = s % 1000;
@@ -26,8 +21,8 @@ $(document).ready(function(){
 			if(val.search('time="') != -1){
 				text.push([val, '']);
 				j++;
-			}
-			if(val.search('CDATA') != -1){
+			}			
+			if(val.search('CDATA') != -1 && textin[i-1].search('ruby="true"') == -1){
 				text[j-1][1] = text[j-1][1] + val.replace('<![CDATA[', '').replace(']]>', '');
 			}
 		});
